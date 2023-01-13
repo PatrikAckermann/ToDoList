@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    padding: 10px;
+    height: 40px;
+    background-color: #359eff;
+    color: white;
+}
+
+#sidebar {
+    border-right: 1px solid black;
+    height: calc(100% - 60px);
+    width: 250px;
+    position: fixed;
+    left: 0;
+    overflow-y: auto;
+}
+
+#container {
+    position: fixed;
+    right: 0;
+    width: calc(100% - 250px);
+    height: calc(100% - 60px);
+    overflow-y: auto;
+}
+
+#listContainer {
+    text-align: center;
+    background-color: #359eff;
+    color: white;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+    width: fit-content;
+    border-radius: 10px;
+    overflow: auto;
+}
+#listContainer div {
+    margin: 5px;
+}
+
+#toDos button {
+    background-color: #ffffff00;
+    border: none;
+    color: white;
+    float: right;
+}
+
+#addToDo {
+    background-color: #359eff;
+    border: white solid 1px;
+    color: white;
+    border-radius: 10px;
+    padding: 5px;
+    padding-left: 8px;
+    padding-right: 8px;
+}
+
+#listContainer button:hover {
+    cursor: pointer;
+}
+
+#listContainer input {
+    float: left;
+}
+
+.sidebarElement {
+    width: 90%;
+    height: 50px;
+    padding: 10px;
+    line-height: 30px;
+    box-sizing:border-box;
+    margin: auto;
+    margin-top: 3px;
+    margin-bottom: 3px;
+    border-radius: 10px;
+    background-color: #359eff;
+    color: white;
+}
+
+.sidebarElement button {
+    background-color: #ffffff00;
+    border: none;
+    color: white;
+    height: 100%;
+    font-size: 50;
+    margin-left: 5px;
+}
+
+.sidebarElement button:hover {
+    cursor: pointer;
+}
+
+.sidebarElement:hover {
+    width: 95%;
+    height: 55px;
+    line-height: 35px;
+}
+
+.list button {
+    float: right;
+    display: none;
+}
+
+
+.list:hover button{
+    display:inline;
+}
+
+.list p {
+    float: left;
+}
+
+.toDo button {
+    display: none;
+}
+
+.toDo:hover button {
+    display: inline;
+}
